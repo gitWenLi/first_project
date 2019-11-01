@@ -1,0 +1,171 @@
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+
+
+ul,
+ol {
+  list-style: none;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+
+}
+
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.mm-header {
+  width: 100%;
+  background-color: #ff841d;
+  height: 3.125rem;
+  padding: .625rem 1.25rem;
+
+  .logo {
+    display: block;
+    font-size: 2.1875rem;
+    line-height: 1.875rem;
+    color: #fff;
+
+    img {
+      height: 1.875rem;
+    }
+  }
+
+  .app {
+    display: block;
+    line-height: 1.875rem;
+    img {
+      height: 1.875rem;
+    }
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+    // width: 100%;
+    overflow: hidden;
+  }
+}
+
+.mm-search {
+  height: 3.75rem;
+  border-bottom: .0625rem solid #e6e6e6;
+  padding: .625rem .625rem;
+
+  .search-input {
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+
+    .search-pro {
+      overflow: hidden;
+      height: 2.5rem;
+      flex: 1;
+      border-radius: 1.25rem 0 0 1.25rem;
+      background-color: #f1f1f1;
+      border: none;
+      padding-left: 1.25rem;
+      font-size: 1rem;
+      margin: 0;
+    }
+
+    .find {
+      width: 5rem;
+      border-radius: 0 1.25rem 1.25rem 0;
+      height: 2.5rem;
+      background-color: #ff841d;
+      border: none;
+      color: #fff;
+    }
+  }
+}
+
+
+.mm-footer {
+  width: 100%;
+  .footer-hd {
+    height: 2.5rem;
+    background-color: #ff841d;
+
+    h3 {
+      color: #fff;
+      line-height: 2.5rem;
+      font-weight: 400;
+      margin-left: .9375rem;
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 1.5625rem;
+      margin-top: .46875rem;
+      margin-right: .9375rem;
+    }
+  }
+  .footer-list {
+    border-bottom: .0625rem solid #a1a1a1;
+    border-top: .0625rem solid #a1a1a1;
+    width: 100%;
+    margin-top: .9375rem;
+    ul {
+      display: flex;
+      li {
+        width: 33.33%;
+        border-right: .0625rem solid #a1a1a1;
+        a {
+          display: block;
+          height: 3.125rem;
+          line-height: 3.125rem;
+          color: #5a5a5a;
+          text-align: center;
+        }
+      }
+      li:last-child {
+        border: none;
+      }
+    }
+  }
+  .foot-bottom {
+    margin-top: 1.25rem;
+    p {
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

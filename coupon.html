@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>优惠劵</title>
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+  <link rel="stylesheet" href="./css/coupon.css">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="bcj-header">
+    <a href="javascript:history.go(-1);" class="f-left">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <h3>优惠劵</h3>
+  </div>
+
+  <!-- 主体内容 -->
+  <div class="coupon-content">
+    <ul>
+      <script type="text/html" id="tmp">
+        {{ each list v i }}
+        <li>
+          <a href="couponproduct.html?couponid={{v.couponId}}">
+            <img src="{{v.couponImg}}" alt="">
+            <p>{{v.couponTitle}} </p>
+          </a>
+        </li>
+        {{ /each }}
+      </script>
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <div class="mm-footer">
+    <div class="footer-list">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="javascript:document.body.scrollTop = 0;">
+            <i class="fa fa-arrow-up"></i>
+            回到顶部
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="foot-bottom">
+      <p>手机APP下载 慢慢买手机版 --掌上比价平台</p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+  <script src="./lib/jquery/jquery-1.12.0.js"></script>
+  <script src="./lib/art/template.js"></script>
+  <script src="./js/coupon.js"></script>
+</body>
+
+</html>

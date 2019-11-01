@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商场导航</title>
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/sitenav.css">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div class="mm-header">
+    <a href="javascript:history.go(-1);" class="logo f-left">
+      <i class="fa fa-chevron-left"></i>
+    </a>
+    <h1>商场导航</h1>
+
+  </div>
+
+  <!-- 主体内容 -->
+  <div class="mm-content">
+    <ul>
+      <script type="text/html" id="tmp">
+        {{ each list v i }}
+        <li>
+          <a  href="{{v.navHref}}">
+            <img src="{{v.navImg}}" alt="">
+            <p>{{v.navTitle}}</p>
+          </a>
+        </li>
+        {{ /each }}
+      </script>
+    </ul>
+  </div>
+
+  <!-- 底部 -->
+  <div class="mm-footer">
+    <div class="footer-list">
+      <ul>
+        <li>
+          <a href="#">登录</a>
+        </li>
+        <li>
+          <a href="#">注册</a>
+        </li>
+        <li>
+          <a href="javascript:document.body.scrollTop = 0;">
+            <i class="fa fa-arrow-up"></i>
+            回到顶部
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="foot-bottom">
+      <p>手机APP下载 慢慢买手机版 --掌上比价平台</p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+  <script src="./lib/jquery/jquery-1.12.0.js"></script>
+  <script src="./lib/art/template.js"></script>
+  <script src="./js/sitenav.js"></script>
+</body>
+
+</html>

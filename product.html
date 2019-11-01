@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/product.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="mm-header">
+      <a href="javascript:;" class="logo f-left">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      <a href="javascript:;" class="app f-right">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="mm-search">
+      <div class="search-input">
+        <input type="text" class="search-pro" name="" id="search_pro" placeholder="请输入你想比价的商品">
+        <input type="button" class="find " value="搜索">
+      </div>
+    </div>
+
+    <!-- 三级菜单 -->
+    <div class="mm-menu">
+      <ul class="clearfix">
+        <li>
+          <a href="./index.html"> 首页 > </a>
+        </li>
+        <li class="index_">
+          <!-- <a href="javascript:history.go(-1)"> 电视 > </a> -->
+        </li>
+        <li class="index">
+
+        </li>
+      </ul>
+    </div>
+    <!-- 三级菜单模板 -->
+    <script type="text/html" id="tmpMenu1">
+      {{each result as v i}}
+      <a href="javascript:history.go(-1)">{{v.category}} > </a>
+      {{/each}}
+    </script>
+    <script type="text/html" id="tmpMenu2">
+      <a href="javascript:;">{{productName}} > </a>
+    </script>
+
+    <!-- 商品详情 -->
+    <div class="mm-detail">
+
+    </div>
+    <!-- 商品详情模板 -->
+    <script type="text/html" id="tmpCon">
+      {{each result as v i}}
+      {{#v.productImg}}
+      <p>{{v.productName}}</p>
+      <ul>
+        <li>
+          <a href="#" class="current">比价购买</a>
+        </li>
+        <li>
+          <a href="#">产品参数</a>
+        </li>
+        <li>
+          <a href="#">优选评价</a>
+        </li>
+      </ul>
+      {{#v.bjShop}}
+      {{ /each }}
+    </script>
+
+    <!-- 评价 -->
+    <div class="mm-comment">
+      <div class="comment-title">
+        <h3>网友评价</h3>
+      </div>
+      <div class="comment-list">
+        <ul>
+
+        </ul>
+      </div>
+      <div class="mm-more">
+        <a href="#">更多优惠 >> </a>
+      </div>
+    </div>
+    <!-- 评论模板 -->
+    <script type="text/html" id="tmpComment">
+      {{ each list v i }}
+      <li>
+        <div class="tit clearfix">
+          <span class="name f-left">{{ v.comName }}</span>
+          <span class="date f-right">{{ v.comTime }}</span>
+          <span class="mall f-right">{{ v.comFrom }}</span>
+        </div>
+        <div class="info">
+          <p>
+            {{ v.comContent }}
+          </p>
+        </div>
+      </li>
+      {{ /each }}
+    </script>
+
+    <div class="mm-footer">
+      <div class="footer-list">
+        <ul>
+          <li>
+            <a href="#">登录</a>
+          </li>
+          <li>
+            <a href="#">注册</a>
+          </li>
+          <li>
+            <a href="javascript:document.body.scrollTop = 0;">
+              <i class="fa fa-arrow-up"></i>
+              回到顶部
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="foot-bottom">
+        <p>手机APP下载 慢慢买手机版 --掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./lib/jquery/jquery-1.12.0.js"></script>
+  <script src="./lib/art/template.js"></script>
+  <script src="./js/product.js"></script>
+</body>
+
+</html>

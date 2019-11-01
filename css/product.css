@@ -1,0 +1,122 @@
+.mm-menu {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #5a5a5a;
+}
+.mm-menu ul {
+  float: left;
+  padding-left: 0.9375rem;
+}
+.mm-menu ul li {
+  float: left;
+  margin-left: 0.3125rem;
+}
+.mm-menu ul li a {
+  color: #fff;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+}
+.mm-detail {
+  width: 100%;
+  padding: 0.625rem;
+}
+.mm-detail img {
+  display: block;
+  margin: 0 auto;
+}
+.mm-detail p {
+  color: #575757;
+  font-size: 16px;
+}
+.mm-detail ul {
+  display: flex;
+  margin-top: 0.9375rem;
+  border-bottom: solid 0.0625rem #c14d00;
+  border-top: solid 0.0625rem #c14d00;
+}
+.mm-detail ul li {
+  width: 33.33%;
+  background-color: #fb0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#fb0));
+  border-left: solid 0.0625rem #c14d00;
+}
+.mm-detail ul li a {
+  display: block;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+.mm-detail ul li:last-child {
+  border-right: solid 0.0625rem #c14d00;
+}
+.mm-detail ul .current {
+  background-color: #ffbb02;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+}
+.mm-detail table {
+  margin-top: 0.625rem;
+  font-size: 12px;
+  color: #5a5a5a;
+}
+.mm-detail table a {
+  display: block ;
+  color: #5a5a5a;
+}
+.mm-comment {
+  width: 100%;
+}
+.mm-comment .comment-title {
+  height: 3.125rem;
+  background-color: #dbdbdb;
+  border-top: 0.3125rem solid #7a7a7a;
+}
+.mm-comment .comment-title h3 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2.8125rem;
+}
+.mm-comment .comment-list {
+  padding: 0.9375rem;
+}
+.mm-comment .comment-list ul li {
+  border-bottom: 0.0625rem solid #ddd;
+  padding-bottom: 1.25rem;
+  margin-top: 0.9375rem;
+}
+.mm-comment .comment-list ul li .tit {
+  overflow: hidden;
+  font-size: 14px;
+  color: #999;
+}
+.mm-comment .comment-list ul li .tit .name,
+.mm-comment .comment-list ul li .tit .date,
+.mm-comment .comment-list ul li .tit .mall {
+  width: 50%;
+  display: block;
+}
+.mm-comment .comment-list ul li .tit .date,
+.mm-comment .comment-list ul li .tit .mall {
+  text-align: right;
+}
+.mm-comment .comment-list ul li .info {
+  margin-top: 1.25rem;
+}
+.mm-comment .comment-list ul li .info p {
+  font-size: 14px;
+  line-height: 1.5625rem;
+}
+.mm-comment .mm-more {
+  width: 100%;
+  padding: 0.625rem;
+}
+.mm-comment .mm-more a {
+  border: 0.0625rem solid #999;
+  text-align: center;
+  color: #333;
+  display: block;
+  padding: 0.625rem 0;
+  border-radius: 0.3125rem;
+  font-size: 14px;
+}

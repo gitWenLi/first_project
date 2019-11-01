@@ -1,0 +1,27 @@
+.coupon-content {
+  width: 100%;
+  padding: 1.25rem 0.625rem;
+}
+.coupon-content ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.coupon-content ul li {
+  width: 7.5rem;
+  height: 4.6875rem;
+  border: 1px solid #ccc;
+  margin-bottom: 0.9375rem;
+}
+.coupon-content ul li a {
+  display: block;
+  text-align: center;
+}
+.coupon-content ul li a img {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+.coupon-content ul li a p {
+  color: #333;
+  font-size: 14px;
+}

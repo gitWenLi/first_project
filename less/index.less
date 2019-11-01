@@ -1,0 +1,124 @@
+.mm-nav {
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    align-content: space-around;
+
+    li {
+      width: 25%;
+      text-align: center;
+      padding-top: 1.25rem;
+
+      a {
+        display: block;
+        color: #5a5a5a;
+        font-size: 13px;
+
+        p {
+          padding-top: .3125rem;
+        }
+      }
+
+      img {
+        width: 3.875rem;
+      }
+    }
+  }
+}
+
+.mm-content {
+  width: 100%;
+  margin-top: 1.25rem;
+
+  .content-hd {
+    height: 2.5rem;
+    background-color: #ff841d;
+
+    h3 {
+      color: #fff;
+      line-height: 2.5rem;
+      font-weight: 400;
+      margin-left: .9375rem;
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 1.5625rem;
+      margin-top: .46875rem;
+      margin-right: .9375rem;
+    }
+  }
+
+  .content-list {
+    width: 100%;
+
+    ul {
+
+      li {
+        display: flex;
+        width: 100%;
+        border-bottom: .0625rem solid #e6e6e6;
+
+        .mitem-left {
+          padding-right: 1.25rem;
+          img {
+            width: 9.5rem;
+          }
+        }
+
+        .mitem-right {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: space-around;
+
+          h5 {
+            // padding-top: 1.25rem;
+            color: #333;
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 1.5625rem;
+          }
+
+          span {
+            color: #ff841d;
+          }
+
+          .other {
+            font-size: 12px;
+
+            .mall {
+              color: #a1a1a1;
+            }
+
+            .comment {
+              color: #a1a1a1;
+              .mui-icon-chat {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mm-more {
+    width: 100%;
+    padding: .625rem;
+    a {
+      border: .0625rem solid #999;
+      text-align: center;
+      color: #333;
+      display: block;
+      padding: .625rem 0;
+      border-radius: .3125rem;
+      font-size: 14px;
+    }
+  }
+}

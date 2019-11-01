@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商品列表</title>
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/productlist.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="mm-header">
+      <a href="javascript:;" class="logo f-left">
+        <img src="./images/header_logo.png" alt="">
+      </a>
+      <a href="javascript:;" class="app f-right">
+        <img src="./images/header_app.png" alt="">
+      </a>
+    </div>
+
+    <!-- 搜索栏 -->
+    <div class="mm-search">
+      <div class="search-input">
+        <input type="text" class="search-pro" name="" id="search_pro" placeholder="请输入你想比价的商品">
+        <input type="button" class="find " value="搜索">
+      </div>
+    </div>
+
+    <!-- 三级菜单 -->
+    <div class="mm-menu">
+      <ul class="clearfix">
+        <li>
+          <a href="./index.html"> 首页 > </a>
+        </li>
+        <li>
+          <a href="./category.html"> 全部分类 > </a>
+        </li>
+        <li class="index">
+
+        </li>
+      </ul>
+    </div>
+    <!-- 三级菜单模板 -->
+    <script type="text/html" id="tmpMenu">
+      {{each result as v i}}
+      <a href="javascript:;">{{v.category}} > </a>
+      {{/each}}
+    </script>
+
+    <!-- 主体内容 -->
+    <div class="mm-products">
+      <ul>
+
+      </ul>
+    </div>
+    <!-- 主题内容模板 -->
+    <script type="text/html" id="tmpCon">
+      {{ each result v i}}
+      <li>
+        <a href="product.html?productid={{v.productId}}&categoryid={{v.categoryId}}">
+          <div class="list-left">
+            {{#v.productImg}}
+          </div>
+          <div class="list-right ">
+            <h4>{{v.productName}}</h4>
+            <h3>{{v.productPrice}}</h3>
+            <div class="other clearfix">
+              <span class="mall f-left">{{v.productQuote}}</span>
+              <span class="comment f-right">{{v.productCom}}</span>
+            </div>
+          </div>
+        </a>
+      </li>
+      {{ /each }}
+    </script>
+
+    <!-- 分页 -->
+    <div class="mm-pages">
+      <div>
+        <a class="last-page" href="#">上一页</a>
+      </div>
+      <div class="page-div">
+        <select name="page-select" class="page-select">
+
+        </select>
+      </div>
+      <div>
+        <a class="next-page" href="#">下一页</a>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="mm-footer">
+      <div class="footer-list">
+        <ul>
+          <li>
+            <a href="#">登录</a>
+          </li>
+          <li>
+            <a href="#">注册</a>
+          </li>
+          <li>
+            <a href="javascript:document.body.scrollTop = 0;">
+              <i class="fa fa-arrow-up"></i>
+              回到顶部
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="foot-bottom">
+        <p>手机APP下载 慢慢买手机版 --掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分页选择框模板 -->
+  <script type="text/html" id="tmpSelect">
+    <% for( var i = 1; i <= maxPage; i++ ) { %>
+    <option value="<%= i %>"><%= i %> / {{ maxPage }} </option>
+    <% } %>
+  </script>
+
+  <script src="./lib/jquery/jquery-1.12.0.js"></script>
+  <script src="./lib/art/template.js"></script>
+  <script src="./js/productlist.js"></script>
+</body>
+
+</html>

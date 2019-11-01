@@ -1,0 +1,38 @@
+.mm-content {
+  width: 100%;
+  padding: 0 0.9375rem;
+}
+.mm-content ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.mm-content ul li {
+  width: 50%;
+  text-align: center;
+}
+.mm-content ul li a {
+  display: block;
+}
+.mm-content ul li a img {
+  padding: 1.25rem;
+  width: 100%;
+}
+.mm-content ul li a .tit {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5625rem;
+  text-align: left;
+}
+.mm-content ul li a .price {
+  color: #ff6c00;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.25rem;
+}
+.mm-content ul li a .mall {
+  text-align: left;
+  font-size: 12px;
+  color: #a1a1a1;
+  line-height: 1.25rem;
+}

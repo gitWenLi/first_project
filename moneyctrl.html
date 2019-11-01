@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>省线控</title>
+  <link rel="stylesheet" href="./lib/fa/css/font-awesome.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/moneyctrl.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- 头部 -->
+    <div class="mm-header">
+      <a href="javascript:history.go(-1);" class="logo f-left">
+        <i class="fa fa-chevron-left"></i>
+      </a>
+      <h1>省钱控-最新优惠</h1>
+
+    </div>
+
+    <!-- 主题内容 -->
+    <div class="mm-content">
+      <div class="content-list">
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- 分页 -->
+    <div class="mm-pages">
+      <div>
+        <a class="last-page" href="#">上一页</a>
+      </div>
+      <div class="page-div">
+        <select name="page-select" class="page-select">
+
+        </select>
+      </div>
+      <div>
+        <a class="next-page" href="#">下一页</a>
+      </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="mm-footer">
+      <div class="footer-list">
+        <ul>
+          <li>
+            <a href="#">登录</a>
+          </li>
+          <li>
+            <a href="#">注册</a>
+          </li>
+          <li>
+            <a href="javascript:document.body.scrollTop = 0;">
+              <i class="fa fa-arrow-up"></i>
+              回到顶部
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="foot-bottom">
+        <p>手机APP下载 慢慢买手机版 --掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- 主题内容模板 -->
+  <script type="text/html" id="tmpCon">
+    {{ each result as v i }}
+    <li>
+      <a href="moneyproduct.html?productid={{v.productId}}">
+        <div class="mitem-left">
+          <%
+        let img = v.productImgSm.split('imgurl=')[1];
+        img=img.split('" alt=')[0]
+        %>
+          <img src="{{img}}" alt="">
+        </div>
+        <div class="mitem-right">
+          <h5>{{v.productName}}<span>{{ v.productPinkage }}</span></h5>
+          <div class="other clearfix">
+            <span class="mall">{{ v.productFrom}} | {{ v.productTime }}</span>
+            <span class="comment">
+              <i class="fa fa-commenting-o"></i>
+              {{ v.productComCount }}
+            </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    {{ /each }}
+  </script>
+
+  <!-- 分页选择框模板 -->
+  <script type="text/html" id="tmpSelect">
+    <% for( var i = 1; i <= maxPage; i++ ) { %>
+    <option value="<%= i %>"><%= i %> / {{ maxPage }} </option>
+    <% } %>
+  </script>
+
+
+  <script src="./lib/jquery/jquery-1.12.0.js"></script>
+  <script src="./lib/art/template.js"></script>
+  <script src="./js/moneyctrl.js"></script>
+</body>
+
+</html>

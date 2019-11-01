@@ -1,0 +1,35 @@
+.mm-category {
+  background-color: #EEEEEE;
+  border-top: 0.0625rem solid #e6e6e6;
+  padding: 0 0.3125rem;
+}
+.mm-category .cates .item .cate-title {
+  border-bottom: 0.0625rem solid #bbb;
+}
+.mm-category .cates .item .cate-title a {
+  display: block;
+  color: #000;
+  padding-left: 1.25rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.mm-category .cates .item .cate-body {
+  display: none;
+  background-color: #fff;
+}
+.mm-category .cates .item .cate-body ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mm-category .cates .item .cate-body ul li {
+  width: 33.33%;
+  text-align: center;
+  border-right: 0.0625rem solid #bbb;
+  border-bottom: 0.0625rem solid #bbb;
+}
+.mm-category .cates .item .cate-body ul li a {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  line-height: 2.5rem;
+}

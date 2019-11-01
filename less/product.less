@@ -1,0 +1,127 @@
+.mm-menu {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #5a5a5a;
+  ul {
+    float: left;
+    padding-left: .9375rem;
+    li {
+      float: left;
+      margin-left: .3125rem;
+      a {
+        color: #fff;
+        line-height: 40px;
+        display: block;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.mm-detail {
+  width: 100%;
+  padding: .625rem;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  p {
+    color: #575757;
+    font-size: 16px;
+  }
+  ul {
+    display: flex;
+    margin-top: .9375rem;
+    border-bottom:solid .0625rem #c14d00 ;
+    border-top:solid .0625rem #c14d00 ;
+    li {
+      width: 33.33%;
+      background-color: #fb0;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#fb0));
+      border-left: solid .0625rem #c14d00;
+      a {
+        display: block;
+        line-height: 2.5rem;
+        text-align: center;
+        color: #fff;
+      }
+    }
+    li:last-child {
+      border-right: solid .0625rem #c14d00;
+    }
+    .current {
+      background-color: #ffbb02;
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+    }
+  }
+
+  table {
+    margin-top: .625rem ;
+    font-size: 12px;
+    color: #5a5a5a;
+    a {
+      display:block ;
+      color: #5a5a5a;
+    }
+  }
+
+}
+
+.mm-comment {
+  width: 100%;
+  .comment-title {
+    height: 3.125rem;
+    background-color: #dbdbdb;
+    border-top: .3125rem solid #7a7a7a;
+    h3 {
+      font-size: .875rem;
+      font-weight: normal;
+      text-align: center;
+      line-height: 2.8125rem;
+    }
+  }
+
+  .comment-list {
+    padding: .9375rem;
+    ul {
+      li {
+        border-bottom: .0625rem solid #ddd;
+        padding-bottom: 1.25rem;
+        margin-top: .9375rem;
+        .tit {
+          overflow: hidden;
+          font-size: 14px;
+          color: #999;
+          .name, .date, .mall {
+            width: 50%;
+            display: block;
+          }
+          .date, .mall {
+            text-align: right;
+          }
+        }
+        .info {
+          margin-top: 1.25rem;
+          p {
+            font-size: 14px;
+            line-height: 1.5625rem;
+          }
+        }
+      }
+    }
+  }
+
+  .mm-more {
+    width: 100%;
+    padding: .625rem;
+    a {
+      border: .0625rem solid #999;
+      text-align: center;
+      color: #333;
+      display: block;
+      padding: .625rem 0;
+      border-radius: .3125rem;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.mm-menu {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #5a5a5a;
+}
+.mm-menu ul {
+  float: left;
+  padding-left: 0.9375rem;
+}
+.mm-menu ul li {
+  float: left;
+  margin-left: 0.3125rem;
+}
+.mm-menu ul li a {
+  color: #fff;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+}
+.mm-content .tit {
+  height: 2.5rem;
+  margin: 0.625rem 0.3125rem;
+  background-color: #eee;
+  color: #874604;
+  border: 1px solid #ccc;
+}
+.mm-content .tit h3 {
+  font-weight: normal;
+  line-height: 2.375rem;
+  font-size: 16px;
+  margin-left: 0.625rem;
+}
+.mm-content .brand-list {
+  background-color: #ededed;
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem;
+}
+.mm-content .brand-list li {
+  border-bottom: 1px solid #ccc;
+}
+.mm-content .brand-list li a {
+  color: #000;
+  line-height: 2.5rem;
+  font-size: 16px;
+  padding-left: 0.9375rem;
+  font-weight: 600;
+  display: block;
+}
+.mm-content .brand-list li a i {
+  float: right;
+  line-height: 2.5rem;
+  color: #666;
+  margin-right: 0.9375rem;
+}

@@ -1,0 +1,95 @@
+.mmgs-nav {
+  width: 100%;
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.mmgs-nav .filter {
+  flex: 1;
+}
+.mmgs-nav .filter .tit {
+  display: flex;
+  justify-content: space-around;
+  border-right: 1px solid #ccc;
+}
+.mmgs-nav .filter .tit .info {
+  width: 33.33%;
+}
+.mmgs-nav .filter .tit .info a {
+  text-align: center;
+  color: #333;
+  position: relative;
+  display: block;
+}
+.mmgs-nav .filter .items {
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: none;
+}
+.mmgs-nav .filter .items .item {
+  height: 2.5rem;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.mmgs-nav .filter .items .item a {
+  display: block;
+  color: #333;
+  padding-left: 0.9375rem;
+}
+.mmgs-nav i {
+  line-height: 2.5rem;
+  font-size: 20px;
+  color: #ccc;
+  margin: 0 0.9375rem;
+}
+.mm-content {
+  background-color: #eee;
+  padding: 0.3125rem;
+}
+.mm-content ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mm-content ul li {
+  background-color: #fff;
+  width: 48%;
+  margin-bottom: 0.3125rem;
+}
+.mm-content ul li a {
+  display: block;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+.mm-content ul li a img {
+  display: block;
+  width: 10.875rem;
+  height: 10.875rem;
+  margin: 0 auto;
+}
+.mm-content ul li a p {
+  font-size: 14px;
+  color: #333;
+  overflow: hidden;
+}
+.mm-content ul li a .other {
+  margin-top: 0.3125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.mm-content ul li a .other .price {
+  font-size: 20px;
+  color: #f8601d;
+}
+.mm-content ul li a .other .btn {
+  padding: 0.25rem 0.625rem;
+  background-color: #ff9501;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 0.25rem;
+}

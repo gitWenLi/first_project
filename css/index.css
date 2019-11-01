@@ -1,0 +1,100 @@
+.mm-nav {
+  width: 100%;
+}
+.mm-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.mm-nav ul li {
+  width: 25%;
+  text-align: center;
+  padding-top: 1.25rem;
+}
+.mm-nav ul li a {
+  display: block;
+  color: #5a5a5a;
+  font-size: 13px;
+}
+.mm-nav ul li a p {
+  padding-top: 0.3125rem;
+}
+.mm-nav ul li img {
+  width: 3.875rem;
+}
+.mm-content {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+.mm-content .content-hd {
+  height: 2.5rem;
+  background-color: #ff841d;
+}
+.mm-content .content-hd h3 {
+  color: #fff;
+  line-height: 2.5rem;
+  font-weight: 400;
+  margin-left: 0.9375rem;
+  font-size: 18px;
+  margin-top: 0;
+}
+.mm-content .content-hd img {
+  vertical-align: middle;
+  width: 1.5625rem;
+  margin-top: 0.46875rem;
+  margin-right: 0.9375rem;
+}
+.mm-content .content-list {
+  width: 100%;
+}
+.mm-content .content-list ul li {
+  display: flex;
+  width: 100%;
+  border-bottom: 0.0625rem solid #e6e6e6;
+}
+.mm-content .content-list ul li .mitem-left {
+  padding-right: 1.25rem;
+}
+.mm-content .content-list ul li .mitem-left img {
+  width: 9.5rem;
+}
+.mm-content .content-list ul li .mitem-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.mm-content .content-list ul li .mitem-right h5 {
+  color: #333;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5625rem;
+}
+.mm-content .content-list ul li .mitem-right span {
+  color: #ff841d;
+}
+.mm-content .content-list ul li .mitem-right .other {
+  font-size: 12px;
+}
+.mm-content .content-list ul li .mitem-right .other .mall {
+  color: #a1a1a1;
+}
+.mm-content .content-list ul li .mitem-right .other .comment {
+  color: #a1a1a1;
+}
+.mm-content .content-list ul li .mitem-right .other .comment .mui-icon-chat {
+  font-size: 12px;
+}
+.mm-content .mm-more {
+  width: 100%;
+  padding: 0.625rem;
+}
+.mm-content .mm-more a {
+  border: 0.0625rem solid #999;
+  text-align: center;
+  color: #333;
+  display: block;
+  padding: 0.625rem 0;
+  border-radius: 0.3125rem;
+  font-size: 14px;
+}

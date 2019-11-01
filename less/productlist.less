@@ -1,0 +1,87 @@
+.mm-menu {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #5a5a5a;
+  ul {
+    float: left;
+    padding-left: .9375rem;
+    li {
+      float: left;
+      margin-left: .3125rem;
+      a {
+        color: #fff;
+        line-height: 40px;
+        display: block;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.mm-products {
+  width: 100%;
+  ul {
+    li {
+      height: 10.625rem;
+      a {
+        display: flex;
+        justify-content:space-evenly;
+        .list-left {
+          img {
+            display: block;
+            width: 9.375rem;
+            height: 9.375rem;
+          }
+        }
+        .list-right {
+          padding-top: .625rem;
+          margin-left: .625rem;
+          h4 {
+            color: #333;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 1.875rem;
+          }
+          h3 {
+            color: #ed0000;
+            font-size: 20px;
+            font-weight: normal;
+          }
+          .other {
+            margin-top: .9375rem;
+            font-size: 12px;
+            color: #a1a1a1;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.mm-pages {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  padding: 0 .625rem;
+  height: 2.5rem;
+  div {
+    width: 32.33%;
+  }
+  .last-page,.next-page {
+    display: block;
+    width: 100%;
+    line-height: 2.1875rem;
+    text-align: center;
+    background-color: #d4d4d4;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+    box-shadow: 0 0 1px #666;
+    color: #5a5a5a;
+    font-size: 14px;
+  }
+  .page-select {
+    width: 70%;
+    margin-left: 15%;
+    height: 2.1875rem;
+  }
+}

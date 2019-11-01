@@ -1,0 +1,157 @@
+.mm-content {
+  width: 100%;
+  padding: 0.9375rem;
+}
+.mm-content h3 {
+  font-size: 18px;
+  color: #5a5a5a;
+}
+.mm-content .price {
+  font-size: 15px;
+  color: #ff6c00;
+  line-height: 1.5625rem;
+  font-weight: 600;
+}
+.mm-content .info {
+  font-size: 12px;
+  color: #999;
+  margin-top: 0.9375rem;
+}
+.mm-content .info span {
+  margin: 0 0.3125rem;
+}
+.mm-content .info .say {
+  color: #4682c5;
+}
+.mm-content .sm-img {
+  float: right;
+  width: 11.25rem;
+}
+.mm-content .sm-img img {
+  display: block;
+  width: 100%;
+}
+.mm-content .con {
+  margin-top: 1.25rem;
+  color: #606060;
+  font-size: 16px;
+  line-height: 1.5625rem;
+}
+.mm-content .big-img {
+  display: block;
+  margin: 0.625rem auto;
+  padding: 1.875rem 2.5rem;
+}
+.mm-content .big-img img {
+  display: block;
+  width: 100%;
+}
+.mm-content .city {
+  margin-top: 1.5625rem;
+  text-align: center;
+}
+.mm-content .city ul {
+  width: 50%;
+  display: inline-block;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.mm-content .city ul li {
+  border-bottom: 1px dotted #c0c0c0;
+  line-height: 1.5625rem;
+}
+.mm-content .city ul li a {
+  font-size: 14px;
+}
+.mm-content .city ul li a span {
+  display: block;
+  text-align: left;
+  color: #5a5a5a;
+  margin-left: 25%;
+}
+.mm-content .city ul li a strong {
+  display: block;
+  width: 50%;
+  text-align: center;
+  color: #ff6c00;
+  float: right;
+}
+.mm-content .golink {
+  width: 100%;
+  padding: 1.25rem;
+}
+.mm-content .golink a {
+  display: block;
+  background-color: #ff6c00;
+  line-height: 3.125rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+.mm-content .wx {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.mm-content .comment {
+  width: 100%;
+  margin-top: 1.25rem;
+}
+.mm-content .comment .tit {
+  font-size: 16px;
+  color: #5a5a5a;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.mm-content .comment .replay .form {
+  width: 100%;
+  border: 2px solid #eceae8;
+  margin: 0.625rem 0;
+}
+.mm-content .comment .replay .form textarea {
+  width: 100%;
+  border: none;
+  height: 6.25rem;
+}
+.mm-content .comment .replay .form .sub {
+  background-color: #fbfbfb;
+  height: 3.125rem;
+  position: relative;
+}
+.mm-content .comment .replay .form .sub input {
+  background-color: #ff6c00;
+  color: #fff;
+  text-align: center;
+  border: none;
+  position: absolute;
+  right: 0;
+  line-height: 3.125rem;
+  padding: 0 1.875rem;
+  font-size: 16px;
+}
+.mm-content .comment .comment-list {
+  width: 100%;
+}
+.mm-content .comment .comment-list ul li {
+  padding: 1.5625rem 0.9375rem;
+}
+.mm-content .comment .comment-list ul li .userimg {
+  float: left;
+}
+.mm-content .comment .comment-list ul li .userimg img {
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+}
+.mm-content .comment .comment-list ul li .con {
+  float: right;
+}
+.mm-content .comment .comment-list ul li .con .name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mm-content .comment .comment-list ul li .con .name span {
+  display: block;
+  width: 50%;
+}

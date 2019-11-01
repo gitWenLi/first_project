@@ -1,0 +1,176 @@
+.mm-menu {
+  height: 2.5rem;
+  width: 100%;
+  background-color: #5a5a5a;
+}
+.mm-menu ul {
+  float: left;
+  padding-left: 0.9375rem;
+}
+.mm-menu ul li {
+  float: left;
+  margin-left: 0.3125rem;
+}
+.mm-menu ul li a {
+  color: #fff;
+  line-height: 40px;
+  display: block;
+  font-size: 16px;
+}
+.mm-content {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+}
+.mm-content .tit {
+  height: 2.1875rem;
+}
+.mm-content .tit h3 {
+  font-size: 14px;
+  color: #874604;
+  padding-left: 0.625rem;
+  line-height: 2.1875rem;
+}
+.mm-content .brand-list ul li {
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  height: 4rem;
+}
+.mm-content .brand-list ul li a {
+  display: block;
+  padding: 0.625rem;
+}
+.mm-content .brand-list ul li a .num {
+  width: 1.25rem;
+  height: 1.25rem;
+  float: left;
+  color: #fff;
+  background-color: #c9c9c9;
+  text-align: center;
+  font-size: 14px;
+}
+.mm-content .brand-list ul li a .num1 {
+  background-color: #f10e0e;
+}
+.mm-content .brand-list ul li a .num2 {
+  background-color: #ff9314;
+}
+.mm-content .brand-list ul li a .num3 {
+  background-color: #8adf5b;
+}
+.mm-content .brand-list ul li a .info {
+  float: left;
+  margin-left: 1.25rem;
+}
+.mm-content .brand-list ul li a .info h4 {
+  font-size: 16px;
+  color: #000;
+  font-weight: normal;
+}
+.mm-content .brand-list ul li a .info p {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5625rem;
+}
+.mm-content .brand-list ul li a i {
+  float: right;
+  font-size: 30px;
+  line-height: 2.75rem;
+  color: #c9c9c9;
+}
+.mm-content .mm-products {
+  width: 100%;
+}
+.mm-content .mm-products ul {
+  background-color: #fff;
+}
+.mm-content .mm-products ul li {
+  border: 0.0625rem solid #e7e7e7;
+}
+.mm-content .mm-products ul li a {
+  display: flex;
+  justify-content: start;
+}
+.mm-content .mm-products ul li a .list-left img {
+  display: block;
+  width: 9.375rem;
+  height: 9.375rem;
+}
+.mm-content .mm-products ul li a .list-right {
+  padding-top: 0.625rem;
+  margin-left: 0.625rem;
+}
+.mm-content .mm-products ul li a .list-right h4 {
+  color: #333;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875rem;
+}
+.mm-content .mm-products ul li a .list-right h3 {
+  color: #ed0000;
+  font-size: 20px;
+  font-weight: normal;
+}
+.mm-content .mm-products ul li a .list-right .other {
+  margin-top: 0.9375rem;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.mm-content .mm-comment {
+  width: 100%;
+}
+.mm-content .mm-comment .comment-title {
+  height: 3.125rem;
+  background-color: #dbdbdb;
+  border-top: 0.3125rem solid #7a7a7a;
+}
+.mm-content .mm-comment .comment-title h3 {
+  font-size: 0.875rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2.8125rem;
+}
+.mm-content .mm-comment .comment-list {
+  padding: 0.9375rem;
+}
+.mm-content .mm-comment .comment-list ul li {
+  border-bottom: 0.0625rem solid #ddd;
+  padding-bottom: 1.25rem;
+  margin-top: 0.9375rem;
+  background-color: #fff;
+  padding: 0.9375rem;
+}
+.mm-content .mm-comment .comment-list ul li .tit {
+  overflow: hidden;
+  font-size: 14px;
+  color: #999;
+}
+.mm-content .mm-comment .comment-list ul li .tit .name,
+.mm-content .mm-comment .comment-list ul li .tit .date,
+.mm-content .mm-comment .comment-list ul li .tit .mall {
+  width: 50%;
+  display: block;
+}
+.mm-content .mm-comment .comment-list ul li .tit .date,
+.mm-content .mm-comment .comment-list ul li .tit .mall {
+  text-align: right;
+}
+.mm-content .mm-comment .comment-list ul li .info {
+  margin-top: 1.25rem;
+}
+.mm-content .mm-comment .comment-list ul li .info p {
+  font-size: 14px;
+  line-height: 1.5625rem;
+}
+.mm-content .mm-comment .mm-more {
+  width: 100%;
+  padding: 0.625rem;
+}
+.mm-content .mm-comment .mm-more a {
+  border: 0.0625rem solid #999;
+  text-align: center;
+  color: #333;
+  display: block;
+  padding: 0.625rem 0;
+  border-radius: 0.3125rem;
+  font-size: 14px;
+}
